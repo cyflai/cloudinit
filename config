@@ -19,5 +19,5 @@ ssh_authorized_keys:
 
 chpasswd:
   list: |
-    core: 'Zaq!2wsX'
+    core: Zaq!2wsX
   expire: False
