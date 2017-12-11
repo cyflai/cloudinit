@@ -19,5 +19,5 @@ ssh_authorized_keys:
 
 chpasswd:
   list: |
-    chris: Zaq!2wsX
+    core: $6$rounds=4096$wLHFWW.HOCfK$e.cUNrkxvCQ7MLID3uUg6F3gRN6xg5D0oTHz9gH1MiwGmjqqdVTMwO9ErrW/bsQiYHzx2GZdIUw6Ikn5EJfj4/
   expire: False
