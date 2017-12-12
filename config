@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: "dcos-a4"
+hostname: "dcos-aa"
 
 coreos:
   units:
