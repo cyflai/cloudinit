@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: %VMNAMETOHOSTNAME%
+hostname: "abc"
 
 coreos:
   units:
@@ -17,6 +17,7 @@ coreos:
 
     - name: static.network
       content: |
+      runtime: yes
         [Match]
         Name=enp192
 
