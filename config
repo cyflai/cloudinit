@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: "abc"
+hostname: "abc1"
 
 coreos:
   units:
