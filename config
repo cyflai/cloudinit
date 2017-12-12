@@ -21,8 +21,8 @@ coreos:
         Name=ens*
 
         [Network]
-        Gateway=10.15.76.214
-        Address=10.15.76.254/24
+        Gateway=10.15.76.254
+        Address=10.15.76.211/24
         DNS=8.8.8.8
     
 users:
