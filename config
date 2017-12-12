@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: "abc1"
+hostname: guestinfo.hostname
 
 coreos:
   units:
