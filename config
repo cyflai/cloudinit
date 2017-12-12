@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: "dcos-a2"
+hostname: "dcos-a3"
 
 coreos:
   units:
@@ -35,12 +35,12 @@ users:
 
 networkd:
   units:
-    - name: 00-ens.network
+    - name: static.network
       contents: |
         [Match]
-        Name=ens*
+        Name=ens192
 
         [Network]
         DNS=8.8.8.8
-        Address=10.15.76.212/24
+        Address=10.15.76.213/24
         Gateway=10.15.76.254
