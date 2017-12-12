@@ -15,7 +15,6 @@ coreos:
         Restart=always
         ExecStart=/usr/bin/rkt run --volume systemd,kind=host,source=/run/systemd --mount volume=systemd,target=/run/systemd --insecure-options=image --net=host docker://godmodelabs/open-vm-tools
 
-  units:
     - name: static.network
       runtime: yes
       content: |
