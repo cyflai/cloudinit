@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: "dcos-aa1"
+hostname: %VMNAMETOHOSTNAME%
 
 coreos:
   units:
@@ -16,7 +16,6 @@ coreos:
         ExecStart=/usr/bin/rkt run --volume systemd,kind=host,source=/run/systemd --mount volume=systemd,target=/run/systemd --insecure-options=image --net=host docker://godmodelabs/open-vm-tools
 
     - name: static.network
-      runtime: yes
       content: |
         [Match]
         Name=enp192
