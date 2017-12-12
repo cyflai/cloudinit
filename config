@@ -35,10 +35,10 @@ users:
 
 networkd:
   units:
-    - name: 00-eth0.network
+    - name: 00-ens.network
       contents: |
         [Match]
-        Name=ens192
+        Name=ens
 
         [Network]
         DNS=8.8.8.8
