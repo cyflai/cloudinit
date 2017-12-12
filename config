@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: guestinfo.hostname
+hostname: %guestinfo.hostname%
 
 coreos:
   units:
@@ -21,8 +21,8 @@ coreos:
         Name=ens*
 
         [Network]
-        Gateway=10.15.76.254
         Address=10.15.76.211/24
+        Gateway=10.15.76.254
         DNS=8.8.8.8
     
 users:
