@@ -17,7 +17,6 @@ coreos:
 
     - name: static.network
       content: |
-      runtime: true
         [Match]
         Name=enp192
 
