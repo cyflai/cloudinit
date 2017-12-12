@@ -1,5 +1,7 @@
 #cloud-config
 
+hostname: "dcos-m1"
+
 coreos:
   units:
     - name: open-vm-tools.service
@@ -36,7 +38,7 @@ networkd:
     - name: 00-eth0.network
       contents: |
         [Match]
-        Name=eth0
+        Name=ens192
 
         [Network]
         DNS=8.8.8.8
