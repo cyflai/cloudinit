@@ -1,6 +1,6 @@
 #cloud-config
 
-hostname: "dcos-m1"
+hostname: "dcos-a1"
 
 coreos:
   units:
@@ -42,5 +42,5 @@ networkd:
 
         [Network]
         DNS=8.8.8.8
-        Address=10.15.76.210/24
+        Address=10.15.76.211/24
         Gateway=10.15.76.254
