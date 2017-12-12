@@ -1,7 +1,5 @@
 #cloud-config
 
-hostname: %guestinfo.hostname%
-
 coreos:
   units:
     - name: open-vm-tools.service
