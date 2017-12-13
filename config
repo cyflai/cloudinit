@@ -1,5 +1,7 @@
 cloud-config
 
+hostname: "coreos"
+
 coreos:
   units:
     - name: open-vm-tools.service
