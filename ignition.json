@@ -4,7 +4,15 @@
     "config": {}
   },
   "storage": {},
-  "systemd": {},
+  "systemd": {
+ "units": [
+      {
+        "name": "var-nfs.mount",
+        "enable": true,
+        "contents": "[Mount]\nWhat=10.15.76.231:volume3\nWhere=/var/nfs\nType=nfs\n[Install]\nWantedBy=multi-user.target"
+      }
+    ]
+},
   "networkd": {},
   "passwd": {
     "users": [
