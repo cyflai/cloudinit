@@ -1,4 +1,21 @@
-   - name: glusterfs.service
+#cloud-config
+
+hostname: "coreos"
+
+coreos:
+  units:
+    - name: open-vm-tools.service
+      command: start
+      content: |
+        [Unit]
+        Description=Service for virtual machines hosted on VMware
+        Documentation=http://open-vm-tools.sourceforge.net/about.php
+        ConditionVirtualization=vmware
+        [Service]
+        Restart=always
+        ExecStart=/usr/bin/rkt run --volume systemd,kind=host,source=/run/systemd --mount volume=systemd,target=/run/systemd --insecure-options=image --net=host docker://godmodelabs/open-vm-tools
+
+    - name: glusterfs.service
       command: start
       content: |
         [Unit]
